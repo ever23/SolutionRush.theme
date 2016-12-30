@@ -1,0 +1,293 @@
+/*
+Copyright (C) 2016 Enyerber Franco <enyerberfranco.com.ve>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+/**
+*carga la fuente de texto HelveticaLTStd-BlkCond_0.otf y le asigna el nombre de *HelveticaLTStd
+*/
+@font-face {
+  font-family: 'HelveticaLTStd';
+  font-style: normal;
+  font-weight: 100;
+  src:  url("../fonts/HelveticaLTStd-BlkCond_0.otf") format('truetype');
+}
+/**
+*carga la fuente de texto futura_medium_bt-webfont.ttf y le asigna el nombre de *futura_medium_bt
+*/
+@font-face {
+  font-family: 'futura_medium_bt';
+  font-style: normal;
+  font-weight: 100;
+  src:  url("../fonts/futura_medium_bt-webfont.ttf") format('truetype');
+}
+/*cabecera */
+.header {
+    position: relative;/*posicion*/
+    margin: 10px 0 20px 0;/*margenes*/
+    box-shadow: 0px 1px 10px rgba(0,0,0,.3);/*sombras*/
+    margin-bottom: 10px;/*margen inferior*/
+    /*background-color: #E0E0E0;*/   
+}
+/*iconos del titulo principal*/
+.header .context-links {
+    position: absolute;/*pocicion*/
+    right: 12px;/* */
+    top: 10px;
+}
+
+/*menu principal */
+.nav>li>a {
+    padding: 14px 16px 10px 19px;/* Margenes internos*/
+    border-radius: 0;
+}
+
+@media (max-width: 1199px)/*cuando la pantalla es de 1199px */
+{
+  .nav>li>a 
+  {
+    padding: 14px 5px 10px 9px;/* Margenes internos*/
+  }  
+}
+/*menu */
+.navbar-brand {
+    padding: 7px 0 0 5px;/*maregens internos */
+}
+body {
+    font-family: 'futura_medium_bt' ;/*fuente de texto geneal */
+}
+
+header.logo
+{
+     background-color:rgba(0, 0, 0, 0) !important;/* color de fondo trasparente*/
+    height: 170px;/* altura del espacio*/
+    padding-left: auto;/*para centrar el logo*/
+    padding-right: auto;/*para centrar el logo*/
+    padding: 10px;/*margen interno*/
+    padding-top: 50px;
+}
+
+
+.logo img
+{
+   
+    width: 400px;
+}
+
+header.logo,#login footer
+{
+    /*background:rgba(183, 181, 181, 0.23) !important;*/
+    padding: 20px;
+   
+}
+
+/*titulo principal*/
+.breadcrumb
+{
+    /*background:rgba(183, 181, 181, 0.53) !important;*/
+    font-family: 'HelveticaLTStd';/*fuente de texto*/
+    /*color:#fff;*/
+    font-size: 18pt;
+    padding: 2px;
+}
+
+
+/*cabeceras de tablas y pie de pagina */
+.table th,footer
+{
+     font-family: 'HelveticaLTStd';
+}
+/*pagina en general*/
+html
+{
+    height: auto;
+    min-height: 100%;
+}
+/*logo*/
+.logo{
+    align-content: center;
+    text-align: center;
+    align-items: center;
+}
+/*contenido de login */
+#jumbotron > .container
+{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+}
+/* formularios*/
+.formulario
+{
+
+    padding: 20px;
+
+}
+/*formularios del login */
+#login .form-horizontal
+{
+    padding-top: 30px;
+}
+
+/* menu primicipal */
+.dropdown a {
+    font-size: 12pt;
+    padding-bottom: 0px !important;
+    padding-top: 23px !important;
+}
+/*titulo  princila*/
+.breadcrumb
+{
+    border-radius: 5px;/*borde*/
+    padding-left: 20px;/*margen izquierda*/
+    
+}
+/*.breadcrumb,#widgets-col1 > .panel,#widgets-col2 > .panel,.formulario,#widget-available.panel*/
+/*titulo del login */
+#login .panel .panel-title
+{
+   /* background:rgb(10,10,10) !important;
+   border: 1px solid  rgba(183, 181, 181, 0.04);*/
+    font-family: 'HelveticaLTStd' !important;/*fuente de texto*/
+    text-align: left;/*alineacion del texto a la izquierda */
+   
+    
+}
+/*panel del login */
+#login .panel .panel-body
+{
+    /*background:  rgba(183, 181, 181, 0.04) !important;*/
+    height: 200px !important;/* tamano del panel */
+    
+}
+/* texto a lado de los campos de texto del login */
+#login label
+{
+      font-family: 'futura_medium_bt' !important;/*funete */
+    text-align: left;/*alineacion del texto a la izquierda */
+    margin-left: 30px;/*margen izquierdo*/
+  /*  margin-right: -20px;*/
+
+}
+/* fuente de texto del menu */
+.dropdown-menu li a
+{
+   
+    font-family: 'futura_medium_bt' !important;
+        padding-left: 20px !important;
+       
+    
+}
+/*formularios en general */
+.form-horizontal .panel  .form-group
+{
+    margin-left: 0px;
+    margin-right: 0px;
+   
+
+}
+/* container */
+body >.container
+{
+    margin-bottom: 60px;
+}
+/* iconos de las tablas */
+.widget-heading-icon
+{
+    float: right;/* flotan a la derecha */
+}
+/*titulos de paneles*/
+.panel h2
+{
+  padding: 2px;/* margenes a inteno */
+}
+/*panel del login */
+#login .panel-body
+{
+    padding: 0px;/*margen interno */
+}
+/*titulo del login */
+#login .panel-heading h2
+{
+     padding: 15px;
+}
+/*itens del menu */
+.dropdown  >a
+{
+   
+  
+    padding-bottom: 0px!important;
+    padding-top: 26px!important;
+}
+body >.container
+{
+    margin-bottom: 60px;
+}
+
+.navbar-brand > img {
+    max-width: 168px;
+    max-height: 60px;
+    width: auto;
+    height: auto;
+    margin-top: -10px;
+  
+}
+/*tamaño de la cabecera de la primera tabla  tabla */
+#widgets-col1  th
+{
+    width: 100px;
+}
+/*tamano de fuente de las tablas */
+.panel table
+{
+  font-size: 11pt;
+}
+body >.container
+{
+    margin-bottom: 60px;
+}
+/*oculta el icono de pfsense original */
+.navbar-brand img
+{
+    display: none;
+}
+/*logo */
+.navbar-brand 
+{
+   height: 50px;/*alto*/
+   width: 200px;/*ancho*/
+   background-size: 100% 100%;/*indica que la imagen cubrira todo*/
+   background-origin: 10px;/*pocicion original*/
+   background-repeat: no-repeat;;/*no se repetira la imagen */
+}
+#login .form-group > div/*separacion de el login */
+{
+    padding-left: 0px;
+}
+#login .form-group > div button
+{
+    margin-left: 30px;
+}
+#login button
+{
+  font-family: 'HelveticaLTStd' !important;/**fuente de texto del boton del  login */
+}
+.platform
+{
+    font-family: 'HelveticaLTStd' !important;/*fuente de texto plataform*/
+}

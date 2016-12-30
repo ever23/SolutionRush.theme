@@ -1,0 +1,629 @@
+
+<!DOCTYPE html>
+<!-- saved from url=(0024)https://000.000.000.000/ -->
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+       
+        <link rel="stylesheet" href="css/SolutionRush.theme.DarkColor.css">
+        <script type="text/javascript" src="vendor/jquery/jquery-1.12.0.min.js"></script>
+        <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <title>SRVFW01.bekeris.net - Status: Dashboard</title>
+    </head>
+
+    <body id="2">
+        <nav id="topmenu" class="navbar navbar-static-top navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#pf-navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://000.000.000.000/"><img src="logo.png" alt="pfSense" title="SRVFW01.bekeris.net"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="pf-navbar">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="https://000.000.000.000/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                System						<span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu"><li><a href="https://000.000.000.000/system_advanced_admin.php" class="navlnk">Advanced</a></li>
+                                <li><a href="https://000.000.000.000/system_camanager.php" class="navlnk">Cert. Manager</a></li>
+                                <li><a href="https://000.000.000.000/system.php" class="navlnk">General Setup</a></li>
+                                <li><a href="https://000.000.000.000/system_hasync.php" class="navlnk">High Avail. Sync</a></li>
+                                <li><a href="https://000.000.000.000/index.php?logout" class="navlnk">Logout</a></li>
+                                <li><a href="https://000.000.000.000/pkg_mgr_installed.php" class="navlnk">Package Manager</a></li>
+                                <li><a href="https://000.000.000.000/system_gateways.php" class="navlnk">Routing</a></li>
+                                <li><a href="https://000.000.000.000/wizard.php?xml=setup_wizard.xml" class="navlnk">Setup Wizard</a></li>
+                                <li><a href="https://000.000.000.000/pkg_mgr_install.php?id=firmware" class="navlnk">Update</a></li>
+                                <li><a href="https://000.000.000.000/system_usermanager.php" class="navlnk">User Manager</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="https://000.000.000.000/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                Interfaces						<span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu"><li><a href="https://000.000.000.000/interfaces_assign.php" class="navlnk">(assign)</a></li>
+                                <li><a href="https://000.000.000.000/interfaces.php?if=lan" class="navlnk">LAN</a></li>
+                                <li><a href="https://000.000.000.000/interfaces.php?if=wan" class="navlnk">WAN</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="https://000.000.000.000/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                Firewall						<span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu"><li><a href="https://000.000.000.000/firewall_aliases.php" class="navlnk">Aliases</a></li>
+                                <li><a href="https://000.000.000.000/firewall_nat.php" class="navlnk">NAT</a></li>
+                                <li><a href="https://000.000.000.000/firewall_rules.php" class="navlnk">Rules</a></li>
+
+                                <li><a href="https://000.000.000.000/firewall_schedule.php" class="navlnk">Schedules</a></li>
+                                <li><a href="https://000.000.000.000/firewall_shaper.php" class="navlnk">Traffic Shaper</a></li>
+                                <li><a href="https://000.000.000.000/firewall_virtual_ip.php" class="navlnk">Virtual IPs</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="https://000.000.000.000/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                Services						<span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu"><li><a href="https://000.000.000.000/services_captiveportal.php" class="navlnk">Captive Portal</a></li>
+                                <li><a href="https://000.000.000.000/services_dhcp_relay.php" class="navlnk">DHCP Relay</a></li>
+                                <li><a href="https://000.000.000.000/services_dhcp.php" class="navlnk">DHCP Server</a></li>
+                                <li><a href="https://000.000.000.000/services_dhcpv6_relay.php" class="navlnk">DHCPv6 Relay</a></li>
+                                <li><a href="https://000.000.000.000/services_dhcpv6.php" class="navlnk">DHCPv6 Server &amp; RA</a></li>
+                                <li><a href="https://000.000.000.000/services_dnsmasq.php" class="navlnk">DNS Forwarder</a></li>
+                                <li><a href="https://000.000.000.000/services_unbound.php" class="navlnk">DNS Resolver</a></li>
+                                <li><a href="https://000.000.000.000/services_dyndns.php" class="navlnk">Dynamic DNS</a></li>
+                                <li><a href="https://000.000.000.000/services_igmpproxy.php" class="navlnk">IGMP Proxy</a></li>
+                                <li><a href="https://000.000.000.000/load_balancer_pool.php" class="navlnk">Load Balancer</a></li>
+                                <li><a href="https://000.000.000.000/services_ntpd.php" class="navlnk">NTP</a></li>
+                                <li><a href="https://000.000.000.000/services_pppoe.php" class="navlnk">PPPoE Server</a></li>
+                                <li><a href="https://000.000.000.000/services_snmp.php" class="navlnk">SNMP</a></li>
+                                <li><a href="https://000.000.000.000/pkg_edit.php?xml=miniupnpd.xml" class="navlnk">UPnP &amp; NAT-PMP</a></li>
+                                <li><a href="https://000.000.000.000/services_wol.php" class="navlnk">Wake-on-LAN</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="https://000.000.000.000/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                VPN						<span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu"><li><a href="https://000.000.000.000/vpn_ipsec.php" class="navlnk">IPsec</a></li>
+                                <li><a href="https://000.000.000.000/vpn_l2tp.php" class="navlnk">L2TP</a></li>
+                                <li><a href="https://000.000.000.000/vpn_openvpn_server.php" class="navlnk">OpenVPN</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="https://000.000.000.000/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                Status						<span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu"><li><a href="https://000.000.000.000/status_captiveportal.php" class="navlnk">Captive Portal</a></li>
+                                <li><a href="https://000.000.000.000/status_carp.php" class="navlnk">CARP (failover)</a></li>
+                                <li><a href="https://000.000.000.000/index.php" class="navlnk">Dashboard</a></li>
+                                <li><a href="https://000.000.000.000/status_dhcp_leases.php" class="navlnk">DHCP Leases</a></li>
+                                <li><a href="https://000.000.000.000/status_dhcpv6_leases.php" class="navlnk">DHCPv6 Leases</a></li>
+                                <li><a href="https://000.000.000.000/status_filter_reload.php" class="navlnk">Filter Reload</a></li>
+                                <li><a href="https://000.000.000.000/status_gateways.php" class="navlnk">Gateways</a></li>
+                                <li><a href="https://000.000.000.000/status_interfaces.php" class="navlnk">Interfaces</a></li>
+                                <li><a href="https://000.000.000.000/status_ipsec.php" class="navlnk">IPsec</a></li>
+                                <li><a href="https://000.000.000.000/status_lb_pool.php" class="navlnk">Load Balancer</a></li>
+                                <li><a href="https://000.000.000.000/status_monitoring.php" class="navlnk">Monitoring</a></li>
+                                <li><a href="https://000.000.000.000/status_ntpd.php" class="navlnk">NTP</a></li>
+                                <li><a href="https://000.000.000.000/status_openvpn.php" class="navlnk">OpenVPN</a></li>
+                                <li><a href="https://000.000.000.000/status_pkglogs.php" class="navlnk">Package Logs</a></li>
+                                <li><a href="https://000.000.000.000/status_queues.php" class="navlnk">Queues</a></li>
+                                <li><a href="https://000.000.000.000/status_services.php" class="navlnk">Services</a></li>
+                                <li><a href="https://000.000.000.000/status_logs.php" class="navlnk">System Logs</a></li>
+                                <li><a href="https://000.000.000.000/status_graph.php?if=wan" class="navlnk">Traffic Graph</a></li>
+                                <li><a href="https://000.000.000.000/status_upnp.php" class="navlnk">UPnP &amp; NAT-PMP</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="https://000.000.000.000/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                Diagnostics						<span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu"><li><a href="https://000.000.000.000/diag_arp.php" class="navlnk">ARP Table</a></li>
+                                <li><a href="https://000.000.000.000/diag_authentication.php" class="navlnk">Authentication</a></li>
+                                <li><a href="https://000.000.000.000/diag_backup.php" class="navlnk">Backup &amp; Restore</a></li>
+                                <li><a href="https://000.000.000.000/diag_command.php" class="navlnk">Command Prompt</a></li>
+                                <li><a href="https://000.000.000.000/diag_dns.php" class="navlnk">DNS Lookup</a></li>
+                                <li><a href="https://000.000.000.000/diag_edit.php" class="navlnk">Edit File</a></li>
+                                <li><a href="https://000.000.000.000/diag_defaults.php" class="navlnk">Factory Defaults</a></li>
+                                <li><a href="https://000.000.000.000/diag_halt.php" class="navlnk">Halt System</a></li>
+                                <li><a href="https://000.000.000.000/diag_limiter_info.php" class="navlnk">Limiter Info</a></li>
+                                <li><a href="https://000.000.000.000/diag_ndp.php" class="navlnk">NDP Table</a></li>
+                                <li><a href="https://000.000.000.000/diag_packet_capture.php" class="navlnk">Packet Capture</a></li>
+                                <li><a href="https://000.000.000.000/diag_pf_info.php" class="navlnk">pfInfo</a></li>
+                                <li><a href="https://000.000.000.000/diag_pftop.php" class="navlnk">pfTop</a></li>
+                                <li><a href="https://000.000.000.000/diag_ping.php" class="navlnk">Ping</a></li>
+                                <li><a href="https://000.000.000.000/diag_reboot.php" class="navlnk">Reboot</a></li>
+                                <li><a href="https://000.000.000.000/diag_routes.php" class="navlnk">Routes</a></li>
+                                <li><a href="https://000.000.000.000/diag_smart.php" class="navlnk">S.M.A.R.T. Status</a></li>
+                                <li><a href="https://000.000.000.000/diag_sockets.php" class="navlnk">Sockets</a></li>
+                                <li><a href="https://000.000.000.000/diag_dump_states.php" class="navlnk">States</a></li>
+                                <li><a href="https://000.000.000.000/diag_states_summary.php" class="navlnk">States Summary</a></li>
+                                <li><a href="https://000.000.000.000/diag_system_activity.php" class="navlnk">System Activity</a></li>
+                                <li><a href="https://000.000.000.000/diag_tables.php" class="navlnk">Tables</a></li>
+                                <li><a href="https://000.000.000.000/diag_testport.php" class="navlnk">Test Port</a></li>
+                                <li><a href="https://000.000.000.000/diag_traceroute.php" class="navlnk">Traceroute</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="https://000.000.000.000/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                Gold						<span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu"><li><a href="https://www.pfsense.org/gold" target="_blank" class="navlnk">pfSense Gold</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="https://000.000.000.000/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                Help						<span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu"><li><a href="https://000.000.000.000/help.php?page=index.php" target="_blank" class="navlnk">About this Page</a></li>
+                                <li><a href="https://www.pfsense.org/j.php?jumpto=redmine" target="_blank" class="navlnk">Bug Database</a></li>
+                                <li><a href="https://www.pfsense.org/j.php?jumpto=doc" target="_blank" class="navlnk">Documentation</a></li>
+                                <li><a href="https://www.pfsense.org/j.php?jumpto=fbsdhandbook" target="_blank" class="navlnk">FreeBSD Handbook</a></li>
+                                <li><a href="https://www.pfsense.org/j.php?jumpto=portal" target="_blank" class="navlnk">Paid Support</a></li>
+                                <li><a href="https://www.pfsense.org/j.php?jumpto=book" target="_blank" class="navlnk">pfSense Book</a></li>
+                                <li><a href="https://www.pfsense.org/j.php?jumpto=forum" target="_blank" class="navlnk">User Forum</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="https://000.000.000.000/index.php?logout">
+                                <i class="fa fa-sign-out" title="Log out"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container static">
+            <header class="header">
+
+                <ol class="breadcrumb"><li>Status</li><li>Dashboard</li></ol>		<ul class="context-links">
+
+                    <li>
+                        <a href="https://000.000.000.000/#" title="Save dashboard layout" id="btnstore" class="invisible">
+                            <i class="fa fa-save icon-pointer"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a onclick="$('#widget-available').toggle(360);" title="Available widgets">
+                            <i class="fa fa-plus icon-pointer"></i>
+                        </a>
+                    </li>
+
+
+
+
+
+                    <li>
+                        <a href="https://000.000.000.000/help.php?page=index.php" target="_blank" title="Help for items on this page">
+                            <i class="fa fa-question-circle"></i>
+                        </a>
+                    </li>
+                </ul>
+            </header>
+
+            <div class="panel panel-default collapse out" id="widget-available">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Available Widgets			<span class="widget-heading-icon">
+                            <a data-toggle="collapse" href="https://000.000.000.000/#widget-available_panel-body" id="widgets-available">
+                                <i class="fa fa-plus-circle"></i>
+                            </a>
+                        </span>
+                    </h2>
+                </div>
+                <div id="widget-available_panel-body" class="panel-body collapse in">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-sm-3"><a href="https://000.000.000.000/#" id="btnadd-captive_portal_status"><i class="fa fa-plus"></i> Captive Portal Status</a></div>
+                            <div class="col-sm-3"><a href="https://000.000.000.000/#" id="btnadd-carp_status"><i class="fa fa-plus"></i> CARP Status</a></div>
+                            <div class="col-sm-3"><a href="https://000.000.000.000/#" id="btnadd-dyn_dns_status"><i class="fa fa-plus"></i> Dynamic DNS Status</a></div>
+                            <div class="col-sm-3"><a href="https://000.000.000.000/#" id="btnadd-gateways"><i class="fa fa-plus"></i> Gateways</a></div>
+                            <div class="col-sm-3"><a href="https://000.000.000.000/#" id="btnadd-gmirror_status"><i class="fa fa-plus"></i> GEOM Mirror Status</a></div>
+                            <div class="col-sm-3"><a href="https://000.000.000.000/#" id="btnadd-installed_packages"><i class="fa fa-plus"></i> Installed Packages</a></div>
+                            <div class="col-sm-3"><a href="https://000.000.000.000/#" id="btnadd-interface_statistics"><i class="fa fa-plus"></i> Interface Statistics</a></div>
+                            <div class="col-sm-3"><a href="https://000.000.000.000/#" id="btnadd-ipsec"><i class="fa fa-plus"></i> IPsec</a></div>
+                            <div class="col-sm-3"><a href="https://000.000.000.000/#" id="btnadd-load_balancer_status"><i class="fa fa-plus"></i> Load Balancer Status</a></div>
+                            <div class="col-sm-3"><a href="https://000.000.000.000/#" id="btnadd-ntp_status"><i class="fa fa-plus"></i> NTP Status</a></div>
+                            <div class="col-sm-3"><a href="https://000.000.000.000/#" id="btnadd-openvpn"><i class="fa fa-plus"></i> OpenVPN</a></div>
+                            <div class="col-sm-3"><a href="https://000.000.000.000/#" id="btnadd-picture"><i class="fa fa-plus"></i> Picture</a></div>
+                            <div class="col-sm-3"><a href="https://000.000.000.000/#" id="btnadd-rss"><i class="fa fa-plus"></i> Rss</a></div>
+                            <div class="col-sm-3"><a href="https://000.000.000.000/#" id="btnadd-smart_status"><i class="fa fa-plus"></i> S.M.A.R.T. Status</a></div>
+                            <div class="col-sm-3"><a href="https://000.000.000.000/#" id="btnadd-services_status"><i class="fa fa-plus"></i> Services Status</a></div>
+                            <div class="col-sm-3"><a href="https://000.000.000.000/#" id="btnadd-thermal_sensors"><i class="fa fa-plus"></i> Thermal Sensors</a></div>
+                            <div class="col-sm-3"><a href="https://000.000.000.000/#" id="btnadd-traffic_graphs"><i class="fa fa-plus"></i> Traffic Graphs</a></div>
+                            <div class="col-sm-3"><a href="https://000.000.000.000/#" id="btnadd-wake_on_lan"><i class="fa fa-plus"></i> Wake-on-Lan</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hidden" id="widgetSequence">
+                <form action="https://000.000.000.000/" method="post" id="widgetSequence_form" name="widgetForm"><input type="hidden" name="__csrf_magic" value="sid:e84864c3c1ddba65b47c219133f00772505bb51d,1480947317">
+                    <input type="hidden" name="sequence" value="">
+                </form>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-6" id="widgets-col1">					<div class="panel panel-default" id="widget-system_information">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">
+                                System Information							<span class="widget-heading-icon">
+                                    <a data-toggle="collapse" href="https://000.000.000.000/#widget-system_information_panel-footer" class="config hidden">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <a data-toggle="collapse" href="https://000.000.000.000/#widget-system_information_panel-body">
+                                        <!--  actual icon is determined in css based on state of body -->
+                                        <i class="fa fa-plus-circle"></i>
+                                    </a>
+                                    <a data-toggle="close" href="https://000.000.000.000/#widget-system_information">
+                                        <i class="fa fa-times-circle"></i>
+                                    </a>
+                                </span>
+                            </h2>
+                        </div>
+                        <div id="widget-system_information_panel-body" class="panel-body collapse in">
+
+                            <table class="table table-striped table-hover">
+                                <tbody>
+                                    <tr>
+                                        <th>Name</th>
+                                        <td>SRVFW01.bekeris.net</td>
+                                    </tr>
+                                    <tr>
+                                        <th>System</th>
+                                        <td>
+                                            pfSense			<br>
+                                            Serial: <strong>19412b6b-b33a-11e6-ac10-000c29b804ba</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Version</th>
+                                        <td>
+                                            <strong>2.3.2-RELEASE-p1</strong>
+                                            (amd64)
+                                            <br>
+                                            built on Tue Sep 27 12:13:07 CDT 2016
+                                            <br>
+                                            <span title="FreeBSD SRVFW01.bekeris.net 10.3-RELEASE-p9 FreeBSD 10.3-RELEASE-p9 #1 5fc1b19(RELENG_2_3_2): Tue Sep 27 12:26:06 CDT 2016     root@ce23-amd64-builder:/builder/pfsense-232/tmp/obj/builder/pfsense-232/tmp/FreeBSD-src/sys/pfSense amd64">FreeBSD 10.3-RELEASE-p9</span>
+                                            <br><br>
+                                            <div id="updatestatus">Obtaining update status <i class="fa fa-cog fa-spin"></i></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Platform</th>
+                                        <td>
+                                            pfSense							</td>
+                                    </tr>
+                                    <tr>
+                                        <th>CPU Type</th>
+                                        <td>Intel(R) Xeon(R) CPU           E5630  @ 2.53GHz				<div id="cpufreq"></div>
+                                            <div id="cpucount">
+                                                8 CPUs: 1 package(s) x 8 core(s)				</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Uptime</th>
+                                        <td id="uptime">11 Days 08 Hours 45 Minutes 15 Seconds</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Current date/time</th>
+                                        <td><div id="datetime">Mon Dec 5 9:15:17 EST 2016</div></td>
+                                    </tr>
+                                    <tr>
+                                        <th>DNS server(s)</th>
+                                        <td>
+                                            <ul style="margin-bottom:0px">
+                                                <li>127.0.0.1</li><li>8.8.8.8</li><li>8.8.4.4</li>				</ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Last config change</th>
+                                        <td>Fri Nov 25 13:07:59 EST 2016</td>
+                                    </tr>
+                                    <tr>
+                                        <th>State table size</th>
+                                        <td>
+                                            <div class="progress">
+                                                <div id="statePB" class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                                </div>
+                                            </div>
+                                            <span id="pfstateusagemeter">0%</span>&nbsp;<span id="pfstate">(7/1634000)</span>&nbsp;<span><a href="https://000.000.000.000/diag_dump_states.php">Show states</a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>MBUF Usage</th>
+                                        <td>
+                                            <div class="progress">
+                                                <div id="mbufPB" class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                                </div>
+                                            </div>
+                                            <span id="mbufusagemeter">0%</span>&nbsp;<span id="mbuf">(4310/1017948)</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Load average</th>
+                                        <td>
+                                            <div id="load_average" title="Last 1, 5 and 15 minutes">0.00, 0.00, 0.00</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>CPU usage</th>
+                                        <td>
+                                            <div class="progress">
+                                                <div id="cpuPB" class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                                </div>
+                                            </div>
+                                            <span id="cpumeter">(Updating in 10 seconds)</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Memory usage</th>
+                                        <td>
+
+                                            <div class="progress">
+                                                <div id="memUsagePB" class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 5%">
+                                                </div>
+                                            </div>
+                                            <span id="memusagemeter">5</span><span>% of 16349 MiB</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>SWAP usage</th>
+                                        <td>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                                </div>
+                                            </div>
+                                            <span>0% of 16382 MiB</span>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>Disk usage&nbsp;( / )</th>
+                                        <td>
+                                            <div class="progress">
+                                                <div id="diskspace0" class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 5%">
+                                                </div>
+                                            </div>
+                                            <span>5% of 15GiB - ufs</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Disk usage&nbsp;( /var/run )</th>
+                                        <td>
+                                            <div class="progress">
+                                                <div id="diskspace1" class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100" style="width: 3%">
+                                                </div>
+                                            </div>
+                                            <span>3% of 3.4MiB - ufs in RAM</span>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+
+                        </div>
+                    </div>
+                </div><div class="col-md-6" id="widgets-col2">					<div class="panel panel-default" id="widget-interfaces">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">
+                                <a href="https://000.000.000.000/status_interfaces.php"> Interfaces</a>							<span class="widget-heading-icon">
+                                    <a data-toggle="collapse" href="https://000.000.000.000/#widget-interfaces_panel-footer" class="config hidden">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <a data-toggle="collapse" href="https://000.000.000.000/#widget-interfaces_panel-body">
+                                        <!--  actual icon is determined in css based on state of body -->
+                                        <i class="fa fa-plus-circle"></i>
+                                    </a>
+                                    <a data-toggle="close" href="https://000.000.000.000/#widget-interfaces">
+                                        <i class="fa fa-times-circle"></i>
+                                    </a>
+                                </span>
+                            </h2>
+                        </div>
+                        <div id="widget-interfaces_panel-body" class="panel-body collapse in">
+
+                            <table class="table table-striped table-hover">
+                                <tbody><tr>
+                                        <td title="00:0c:29:b8:04:ba">
+                                            <i class="fa fa-sitemap"></i>
+                                            <a href="https://000.000.000.000/interfaces.php?if=wan">
+                                                WAN			</a>
+                                        </td>
+                                        <td>
+                                            <i class="fa fa-arrow-up text-success" title="up"></i>
+                                        </td>
+                                        <td>
+                                            1000baseT &lt;full-duplex&gt;		</td>
+
+                                        <td>
+                                            000.000.000.000									</td>
+                                    </tr>
+                                    <tr>
+                                        <td title="00:0c:29:b8:04:c4">
+                                            <i class="fa fa-sitemap"></i>
+                                            <a href="https://000.000.000.000/interfaces.php?if=lan">
+                                                LAN			</a>
+                                        </td>
+                                        <td>
+                                            <i class="fa fa-arrow-up text-success" title="up"></i>
+                                        </td>
+                                        <td>
+                                            1000baseT &lt;full-duplex&gt;		</td>
+
+                                        <td>
+                                            000.000.000.000									</td>
+                                    </tr>
+                                </tbody></table>
+                        </div>
+                    </div>
+                    <div class="panel panel-default" id="widget-log">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">
+                                <a href="https://000.000.000.000/status_logs_filter.php"> Firewall Logs</a>							<span class="widget-heading-icon">
+                                    <a data-toggle="collapse" href="https://000.000.000.000/#widget-log_panel-footer" class="config hidden">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <a data-toggle="collapse" href="https://000.000.000.000/#widget-log_panel-body">
+                                        <!--  actual icon is determined in css based on state of body -->
+                                        <i class="fa fa-plus-circle"></i>
+                                    </a>
+                                    <a data-toggle="close" href="https://000.000.000.000/#widget-log">
+                                        <i class="fa fa-times-circle"></i>
+                                    </a>
+                                </span>
+                            </h2>
+                        </div>
+                        <div id="widget-log_panel-body" class="panel-body collapse in">
+                            <script type="text/javascript">
+                                //<![CDATA[
+                                var logWidgetLastRefresh = 1480947317;
+                                //]]>
+                            </script>
+
+
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Act</th>
+                                        <th>Time</th>
+                                        <th>IF</th>
+                                        <th>Source</th>
+                                        <th>Destination</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="https://000.000.000.000/#" onclick="javascript:getURL( & #39; status_logs_filter.php?getrulenum = 80, 1479965625, pass & #39; , outputrule);" role="button" data-toggle="popover" data-trigger="hover" data-title="Rule that triggered this action" data-content="@80(1479965625) pass in log quick on em0 reply-to (em0 000.000.000.000) inet proto tcp from any to 000.000.000.000 port = 443 flags S/SA keep state label &quot;USER_RULE: Remote Management via NAT&quot;"> <i class="fa fa-check text-success"></i>
+                                            </a></td>
+                                        <td title="Dec  5 09:15:16">Dec  5 09:15</td>
+                                        <td>WAN</td>
+                                        <td><a href="https://000.000.000.000/diag_dns.php?host=000.000.000.000" title="Reverse Resolve with DNS">000.000.000.000</a>
+                                        </td>
+                                        <td><a href="https://000.000.000.000/diag_dns.php?host=000.000.000.000" title="Reverse Resolve with DNS">000.000.000.000</a>:443			</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="https://000.000.000.000/#" onclick="javascript:getURL( & #39; status_logs_filter.php?getrulenum = 80, 1479965625, pass & #39; , outputrule);" role="button" data-toggle="popover" data-trigger="hover" data-title="Rule that triggered this action" data-content="@80(1479965625) pass in log quick on em0 reply-to (em0 000.000.000.000) inet proto tcp from any to 000.000.000.000 port = 443 flags S/SA keep state label &quot;USER_RULE: Remote Management via NAT&quot;"> <i class="fa fa-check text-success"></i>
+                                            </a></td>
+                                        <td title="Dec  5 09:15:15">Dec  5 09:15</td>
+                                        <td>WAN</td>
+                                        <td><a href="https://000.000.000.000/diag_dns.php?host=000.000.000.000" title="Reverse Resolve with DNS">000.000.000.000</a>
+                                        </td>
+                                        <td><a href="https://000.000.000.000/diag_dns.php?host=000.000.000.000" title="Reverse Resolve with DNS">000.000.000.000</a>:443			</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="https://000.000.000.000/#" onclick="javascript:getURL( & #39; status_logs_filter.php?getrulenum = 5, 1000000103, block & #39; , outputrule);" role="button" data-toggle="popover" data-trigger="hover" data-title="Rule that triggered this action" data-content="@5(1000000103) block drop in log inet all label &quot;Default deny rule IPv4&quot;"> <i class="fa fa-times text-danger"></i>
+                                            </a></td>
+                                        <td title="Dec  5 09:15:10">Dec  5 09:15</td>
+                                        <td>WAN</td>
+                                        <td><a href="https://000.000.000.000/diag_dns.php?host=64.95.241.2" title="Reverse Resolve with DNS">64.95.241.2</a>
+                                        </td>
+                                        <td><a href="https://000.000.000.000/diag_dns.php?host=64.95.241.15" title="Reverse Resolve with DNS">64.95.241.15</a>:138			</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="https://000.000.000.000/#" onclick="javascript:getURL( & #39; status_logs_filter.php?getrulenum = 59, 12000, block & #39; , outputrule);" role="button" data-toggle="popover" data-trigger="hover" data-title="Rule that triggered this action" data-content="@56(12000) block drop in log quick on em0 inet from 10.0.0.0/8 to any label &quot;Block private networks from WAN block 10/8&quot;"> <i class="fa fa-times text-danger"></i>
+                                            </a></td>
+                                        <td title="Dec  5 09:15:10">Dec  5 09:15</td>
+                                        <td>WAN</td>
+                                        <td><a href="https://000.000.000.000/diag_dns.php?host=192.168.1.50" title="Reverse Resolve with DNS">192.168.1.50</a>
+                                        </td>
+                                        <td><a href="https://000.000.000.000/diag_dns.php?host=192.168.1.255" title="Reverse Resolve with DNS">192.168.1.255</a>:138			</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="https://000.000.000.000/#" onclick="javascript:getURL( & #39; status_logs_filter.php?getrulenum = 59, 12000, block & #39; , outputrule);" role="button" data-toggle="popover" data-trigger="hover" data-title="Rule that triggered this action" data-content="@56(12000) block drop in log quick on em0 inet from 10.0.0.0/8 to any label &quot;Block private networks from WAN block 10/8&quot;"> <i class="fa fa-times text-danger"></i>
+                                            </a></td>
+                                        <td title="Dec  5 09:15:08">Dec  5 09:15</td>
+                                        <td>WAN</td>
+                                        <td><a href="https://000.000.000.000/diag_dns.php?host=192.168.1.10" title="Reverse Resolve with DNS">192.168.1.10</a>
+                                        </td>
+                                        <td><a href="https://000.000.000.000/diag_dns.php?host=192.168.1.255" title="Reverse Resolve with DNS">192.168.1.255</a>:138			</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+
+
+
+                            <!-- close the body we're wrapped in and add a configuration-panel -->
+                        </div>
+                        <div id="widget-log_panel-footer" class="panel-footer collapse">
+
+                            <form action="https://000.000.000.000/widgets/widgets/log.widget.php" method="post" class="form-horizontal"><input type="hidden" name="__csrf_magic" value="sid:e84864c3c1ddba65b47c219133f00772505bb51d,1480947317">
+                                <div class="form-group">
+                                    <label for="filterlogentries" class="col-sm-4 control-label">Number of entries</label>
+                                    <div class="col-sm-6">
+                                        <input type="number" name="filterlogentries" id="filterlogentries" value="" placeholder="5" min="1" max="20" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Filter actions</label>
+                                    <div class="col-sm-6 checkbox">
+                                        <label><input name="actpass" type="checkbox" value="Pass">
+                                            Pass			</label>
+                                        <label><input name="actblock" type="checkbox" value="Block">
+                                            Block			</label>
+                                        <label><input name="actreject" type="checkbox" value="Reject">
+                                            Reject			</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="filterlogentriesinterfaces" class="col-sm-4 control-label">
+                                        Filter interface			</label>
+                                    <div class="col-sm-6 checkbox">
+                                        <select name="filterlogentriesinterfaces" id="filterlogentriesinterfaces" class="form-control">
+                                            <option value="All" selected="">ALL</option>
+                                            <option value="wan">WAN</option>
+                                            <option value="lan">LAN</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="filterlogentriesinterval" class="col-sm-4 control-label">Update interval</label>
+                                    <div class="col-sm-4">
+                                        <input type="number" name="filterlogentriesinterval" id="filterlogentriesinterval" value="" placeholder="60" min="1" class="form-control">
+                                    </div>
+                                    Seconds		</div>
+
+                                <div class="form-group">
+                                    <div class="col-sm-offset-4 col-sm-6">
+                                        <button type="submit" class="btn btn-primary"><i class="fa fa-save icon-embed-btn"></i>Save</button>
+                                    </div>
+                                </div>
+                            </form>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <p class="text-muted">
+                    <a id="tpl" style="display: none;" href="https://000.000.000.000/#" title="Top of page"><i class="fa fa-caret-square-o-up pull-left"></i></a>
+                    <a target="_blank" href="https://www.pfsense.org/?gui=bootstrap">pfSense</a> is ©
+                    2004 - 2016 by <a href="https://pfsense.org/license" class="tblnk">Electric Sheep Fencing LLC</a>. All Rights Reserved.
+                    [<a href="https://000.000.000.000/license.php" class="tblnk">view license</a>]
+                    <a id="tpr" style="display: none;" href="https://000.000.000.000/#" title="Top of page"><i class="fa fa-caret-square-o-up pull-right"></i></a>
+                </p>
+            </div>
+        </footer>
+
+    </body></html>

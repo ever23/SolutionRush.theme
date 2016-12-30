@@ -1,0 +1,216 @@
+
+/**
+ *  Author: Enyerber Franco <enyerberfranco.com.ve>
+*/
+@import url("../vendor/bootstrap/css/bootstrap.min.css");
+@import url("fonts/roboto.css");
+@import url("pfSense.namale.css");
+@import url("SolutionRush/General-Style.css");
+
+
+
+header
+{
+    background-color:rgba(0, 0, 0, 0) !important;
+}
+
+header.logo,footer
+{
+    background:rgba(183, 181, 181, 0.53) !important;
+   
+}
+body.no-menu {
+
+    padding-top: 0px !important;
+     background-color: #616161;
+   
+     border-top-color: rgba(255, 253, 253, 0.48);
+    border-top: solid 160px rgba(255, 253, 253, 0.48);
+    /* border: solid; */
+    padding-top: 0px;
+    margin-top: 0px !important;
+    
+}
+.breadcrumb
+{
+    background:rgba(183, 181, 181, 0.53) !important;
+   
+}
+.breadcrumb>li+li:before {
+    color: #012f5d;
+}
+
+html
+{
+
+    color: #000 !important;
+    text-shadow: 0px 1px 0px #a79f9f !important;
+    padding-bottom: 0px;
+    height: auto;
+    min-height: 100%;
+
+
+    background-image: url('../images/background.jpg')!important;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0,0,0,0) !important;
+
+}
+body
+{
+
+
+    background-color: rgba(0,0,0,0) !important;
+
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+
+button[name=login]:hover
+{
+    background-color: #212c4c !important; 
+}
+button[name=login]
+{
+    background-color: #045db5 !important;
+    border-color: #1c1412;
+    width:100%;
+}
+
+.navbar-inverse {
+    background-color: rgba(148, 148, 148, 0.62);
+}
+.navbar-inverse .navbar-nav >li>a {
+    border-bottom:  5px solid rgba(110, 109, 109, 0) ;
+    color: #BDBDBD;
+}
+.navbar-inverse:hover .navbar-nav >li>a:hover
+{
+    border-bottom: 5px solid rgba(128, 211, 67, 0.65);
+}
+
+
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color:    rgba(183, 181, 181, 0.63);
+}
+.table>thead
+{
+    background: rgba(255,255,255,.7);;
+     color:#000;
+    text-shadow: 1px 0 0 #000;
+}
+.dropdown-menu
+{
+    background:rgba(232, 232, 232, 0.94);;
+    border: 1px solid rgba(128, 211, 67, 0.65);
+}
+.navbar-nav .open .dropdown-menu{
+    border: 1px solid rgba(128, 211, 67, 0.65);
+}
+/*.breadcrumb:hover,#widgets-col1 > .panel:hover,#widgets-col2 > .panel:hover,#widget-available.panel:hover*/
+.panel:hover,.breadcrumb:hover
+{
+    box-shadow:2px 5px 10px rgb(128, 211, 67),-2px 5px 10px #80d343;
+
+}
+.panel .table,.panel.table,.panel .content
+{
+    background:  rgba(183, 181, 181, 0.70);
+}
+.breadcrumb
+{
+    border: 1px solid rgb(4, 93, 181);
+    box-shadow: 0px 2px 6px #80d343;
+    border-radius: 5px;
+}
+/*.breadcrumb,#widgets-col1 > .panel,#widgets-col2 > .panel,.formulario,#widget-available.panel*/
+.panel{
+    border: 1px solid rgb(4, 93, 181);
+    box-shadow: 0px 2px 6px #80d343;
+    border-radius: 5px;
+    background: rgba(3, 0, 0, 0.7) !important;
+
+    border-radius: 5px;
+
+    padding:10px;
+}
+.panel .panel-heading
+{
+    background:rgba(6,6,6,0.00) !important;
+}
+.form-horizontal .panel  .form-group
+{
+    margin-left: 0px;
+    margin-right: 0px;
+    background:  rgba(183, 181, 181, 0.70);
+    color:#000;
+    text-shadow: 1px 0 0 #000;
+
+}
+.form-horizontal .panel  .form-group .help-block
+{
+    color:#000;
+    text-shadow: 1px 0 0 #8a7c7c;
+}
+.dropdown-menu>li:hover,.navbar-nav .open .dropdown-menu>li:hover
+{
+    border: 1px solid rgba(128, 211, 67, 0.65);
+}
+ul.context-links li a {
+    color: rgb(128, 211, 67);
+}
+a
+{
+    color:  #4caf50;
+    text-shadow: 0px 1px 0 #000000;
+
+}
+a:hover,a:visited
+{
+    color:#045db5;
+    text-decoration: underline;
+
+}
+
+.nav .nav-pills
+{
+
+    background: rgba(255, 255, 255, 0.6);
+
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav li.open>a, .nav li.open>a:focus, .nav-pills>li.active>a:hover {
+    border-bottom: 5px solid #045db5;
+    color: #4a7a27;
+    background-color: rgba(245, 245, 245, 0.76);
+}
+.nav-pills>li>a{
+    background-color: rgba(245, 245, 245, 0.76);
+    border-bottom: 5px solid #73cc31;
+    color: #4a7a27;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    border-bottom: 5px solid #47920f;
+    background-color: #f5f5f5;
+}
+
+
+body.no-menu #jumbotron {
+    background: url(../images/SR_COLOR_1.png) no-repeat center 30px;
+    padding: 100px 0;
+    background-size: 450px;
+    /* position: relative; */
+    /* top: -50px; */
+    /* left: auto; */
+    margin-top: -170px;
+    padding-top: 240px;
+}
+
+.navbar-brand 
+{
+   background-image: url(../images/SR_COLOR_1.png) ;
+  
+}

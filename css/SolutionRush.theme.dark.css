@@ -1,0 +1,154 @@
+/**
+*  PY (OR!" {Ef13}) 
+*/
+@import url("../vendor/bootstrap/css/bootstrap.min.css");
+@import url("fonts/roboto.css");
+@import url("pfSense.css");
+@import url("../vendor/jquery/jquery-ui/themes/dark-hive/theme.css");
+@import url("pfSense-dark.css");
+
+/* Estilos Generales */
+@import url("SolutionRush/General-Style.css");
+
+/* color del slash del titulo principal*/
+.breadcrumb>li+li:before {
+    color: #fff;
+}
+/* cabeceras de las tablas */
+.table th
+{
+     font-family: 'HelveticaLTStd';
+}
+/*fondo de losgin incluye el icono*/
+body.no-menu {
+    background: url("../images/SR_COLOR.png") no-repeat center 30px;/*logo principal*/
+    padding-top: 70px;/*distancia del borde interno*/
+    background-color: #616161;/*color de fondo*/
+    background-size: 360px;/*tamano de la imagen*/
+    
+}
+/*boton del login */
+button[name=login]:hover/*cuando el puntero esta sobre el boton*/
+{
+    background-color: #212c4f !important; /*color de fondo */
+}
+/*boton del login */
+button[name=login]
+{
+    background-color: #045db5 !important; /*color de fondo */
+  
+}
+
+.navbar-inverse .navbar-nav >li>a {
+  
+    color: #BDBDBD; /*color de texto */
+}
+.panel .table,.panel.table,.panel .content
+{
+   /* background:  rgba(183, 181, 181, 0.03);*/
+    color:#fff;/*color de texto */
+   
+}
+/*color del menu*/
+.dropdown-menu
+{
+   background: #000;/*color de fondo */
+    color:#fff;/*color de texto*/
+  
+}
+/* panel del login */
+#login .panel 
+{
+     border: 0px;/*borde*/
+      color:#fff;/*color de texto*/
+    
+}
+/* campo de texto*/
+input 
+{
+    color:#000;/*color de texto*/
+}
+/* formularios en general*/
+.form-horizontal .panel  .form-group .help-block
+{
+    color:#000;/*color de texto*/
+   
+}
+/*iconos del titulo principal*/
+ul.context-links li a {
+    color: #80d443;
+}
+/*links */
+a
+{
+    color:  #045db5;/*color de texto*/
+    
+
+}
+/*links visitados */
+a:hover,a:visited
+{
+    color:#045db5;/*color de texto*/
+    text-decoration: underline;/*decoracion*/
+
+}
+/* menu principal*/
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav li.open>a, .nav li.open>a:focus, .nav-pills>li.active>a:hover {
+    border-bottom: 5px solid #045db5;/*borde de abajo*/
+    color: #4a7a27;/*color de texto*/
+ 
+}
+.nav-pills>li>a{
+   /* background-color: rgba(245, 245, 245, 0.76);
+    border-bottom: 5px solid #73cc31;*/
+    color: #73cc31;
+}
+/*menu desplegado cuando se coloca el puntero*/
+.nav>li>a:focus, .nav>li>a:hover {
+    border-bottom: 5px solid #47920f;/*color del border */
+  
+    background-color: #f5f5f5;/*color de fondo*/
+}
+/*
+bordes tablas
+*/
+.table tr th,.table tr td,.table thead tr, .panel .panel-heading
+{
+        border-top: #000!important;
+     border-bottom: #000!important;
+}
+/*
+iconos success
+*/
+.text-success {
+    color: #80d443;/*color*/
+}
+/*barras de progreso*/
+.progress-bar {
+    background-color: #80d443;/*color de fondo*/
+}
+/*logo*/
+.navbar-brand 
+{
+   background-image: url(../images/SR_COLOR.png) ;
+  
+}
+/*formulario de login*/
+#login .form-horizontal {
+     padding: 0px;
+     padding-left: 20px; 
+}
+/*panel de formulario de login*/
+#login .panel .panel-body
+{
+    height: auto !important;
+}
+/* margen interno del titulo del login*/
+#login .panel-heading h2 {
+     padding: 0px; 
+}
+
+body.no-menu #jumbotron {
+    padding: 0px 100px;
+    background-image: linear-gradient(to bottom,#3c3c3c 0,#222 100%);
+}

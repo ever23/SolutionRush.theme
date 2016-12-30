@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)https://000.000.000.000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      
+        
+     
+        <script type="text/javascript" src="vendor/jquery/jquery-1.12.0.min.js"></script>
+        <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+     
+<link rel="stylesheet" href="css/SolutionRush.theme.color.css">
+        <title>Login</title>
+
+    </head>
+    <body id="login" class="no-menu">
+	<div id="jumbotron">
+		<div class="container">
+			<div class="col-sm-offset-3 col-sm-6 col-xs-12">
+
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h2 class="panel-title">Login to pfSense</h2>
+					</div>
+
+					<div class="panel-body">
+						<div class="alert alert-warning hidden" id="no_cookies" style="display: none;">The browser must support cookies to login.</div>
+
+						<form method="post" action="https://000.000.000.000/index.php" class="form-horizontal"><input type="hidden" name="__csrf_magic" value="sid:dbef9d1fbb2e70e44dae90dd6fad78f40ffdcba7,1480947050;ip:158b462b1e8d90b23a6df7e2087c08aea01336c9,1480947050">
+							<div class="form-group">
+								<label for="usernamefld" class="col-sm-3 control-label">Username</label>
+								<div class="col-sm-9 col-md-7">
+									<input type="text" class="form-control" name="usernamefld" id="usernamefld" placeholder="Enter your username" autocorrect="off" autocapitalize="none" spellcheck="false">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="passwordfld" class="col-sm-3 control-label">Password</label>
+								<div class="col-sm-9 col-md-7">
+									<input type="password" class="form-control" name="passwordfld" id="passwordfld" placeholder="Enter your password">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="col-sm-offset-3 col-sm-9 col-md-7">
+									<button type="submit" class="btn btn-primary" name="login">Login</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+		//!<[CDATA[
+		events.push(function() {
+			document.cookie=
+				"cookie_test=1" +
+				"; secure";
+
+			if (document.cookie.indexOf("cookie_test") == -1)
+				document.getElementById("no_cookies").style.display="";
+			else
+				document.getElementById("no_cookies").style.display="none";
+
+			// Delete it
+			document.cookie = "cookie_test=1; expires=Thu, 01-Jan-1970 00:00:01 GMT";
+		});
+		//]]>
+		</script>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<p class="text-muted">
+				<a id="tpl" style="" href="https://000.000.000.000/#" title="Top of page"><i class="fa fa-caret-square-o-up pull-left"></i></a>
+				<a target="_blank" href="https://www.pfsense.org/?gui=bootstrap">pfSense</a> is ©
+				2004 - 2016 by <a href="https://pfsense.org/license" class="tblnk">Electric Sheep Fencing LLC</a>. All Rights Reserved.
+				[<a href="https://000.000.000.000/license.php" class="tblnk">view license</a>]
+				<a id="tpr" style="" href="https://000.000.000.000/#" title="Top of page"><i class="fa fa-caret-square-o-up pull-right"></i></a>
+			</p>
+		</div>
+	</footer>
+
+
+
+
+
+    </body></html>

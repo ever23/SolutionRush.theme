@@ -1,0 +1,280 @@
+/**
+ *   Author: Enyerber Franco <enyerberfranco.com.ve>
+ *   
+*/
+
+@import url("../vendor/bootstrap/css/bootstrap.min.css");
+@import url("fonts/roboto.css");
+@import url("pfSense.namale.css");
+/*
+Estilos generales 
+*/
+@import url("SolutionRush/General-Style.css");
+
+
+/**
+*color de cabecera de la cabecera y el pie de pagina 
+*/
+header,footer
+{
+    background-color:#14284B !important;
+}
+
+/**
+ Colores del titulo Status / Dashboard
+*/
+.breadcrumb
+{
+    background:#001288 !important;/*color de fondo*/
+    color:#fff;/*color de texto*/
+     
+}
+/**
+ Colores del slach del titulo  Status / Dashboard
+*/
+.breadcrumb>li+li:before {
+    color: #ffffff;
+}
+
+/**/
+body#login
+{
+    background-color: #14284B!important;
+}
+
+#login .panel
+{
+        width: 450px;
+}
+.panel-title {
+    font-size: 19px;
+   
+}
+
+#login .panel-title {
+    background-color: #16078C;
+  
+    font-size: 28px;
+    padding: 10px !important;
+    height: 40px;
+   
+}
+.panel-title
+{
+    background-color: #005db4;
+  
+}
+
+
+#login button[name=login]:hover
+{
+    background-color: #001288 !important; 
+}
+#login button[name=login]
+{
+     
+    background-color:#001288 !important;
+    border-color: #1c1412;
+   float:right;
+   border-radius: 6px;
+    
+}
+
+
+.navbar-inverse {
+    background-color:#14284B !important;
+   
+}
+.navbar-inverse .navbar-nav >li>a {
+    border-bottom:  5px solid rgba(110, 109, 109, 0) ;
+    color: #80d443;
+}
+.navbar-inverse:hover .navbar-nav >li>a:hover
+{
+    border-bottom: 5px solid rgba(110, 109, 109, 0);
+    color: #80d443;
+}
+
+
+
+.table
+{
+     color:#000;
+    background-color:  #c5bfe1  !important;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color:    #dbd9ee;
+}
+/**
+    background: #c5bfe1
+*/
+.dropdown-menu
+{
+    background-color:#212c4b !important;
+    color:#fff !important;
+  
+}
+.navbar-nav .open .dropdown-menu{
+   
+     color:#fff !important;
+}
+/*.breadcrumb:hover,#widgets-col1 > .panel:hover,#widgets-col2 > .panel:hover,#widget-available.panel:hover*/
+
+
+
+/*.breadcrumb,#widgets-col1 > .panel,#widgets-col2 > .panel,.formulario,#widget-available.panel*/
+.panel{
+  color :#fff;
+    background: rgba(0, 0, 0, 0) !important;
+
+    border-radius: 5px;
+
+   
+}
+.panel .panel-heading
+{
+    background:rgba(6,6,6,0.00) !important;
+    margin: 0px;
+    padding: 0px
+}
+#login .panel .panel-body
+{
+    background: #3DD42D;
+    padding: 0px;
+    height: 210px;
+   
+}
+
+
+.form-horizontal .panel  .form-group
+{
+    
+    background:  rgba(183, 181, 181, 0.70);
+    color:#000;
+   
+
+}
+.form-horizontal .panel  .form-group .help-block
+{
+    color:#000;
+    
+}
+.dropdown-menu li a
+{
+     color:#fff;
+   
+    
+}
+.dropdown-menu li a:hover
+{
+     color: #045db5;
+}
+
+.dropdown-menu>li:hover,.navbar-nav .open .dropdown-menu>li:hover
+{
+    
+    color: #80d443;
+}
+ul.context-links li a {
+    color: #fff;
+}
+a
+{
+    color:  #001288;
+   
+
+}
+a:hover,a:visited
+{
+    color:#045db5;
+    text-decoration: underline;
+
+}
+.dropdown  >a
+{
+    color:#fff !important;
+   
+    
+}
+.dropdown  >a:hover
+{
+    color:  #80d443 !important;
+}
+
+.nav .nav-pills
+{
+
+    background: rgba(255, 255, 255, 0.6);
+
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav li.open>a, .nav li.open>a:focus, .nav-pills>li.active>a:hover {
+    border-bottom: 5px solid  #80d443;
+    color: #80d443;
+    background-color: rgba(245, 245, 245, 0.76);
+}
+.nav-pills>li>a{
+    background-color: rgba(245, 245, 245, 0.76);
+    border-bottom: 5px solid #80d443;
+    color: #80d443;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    border-bottom: 5px solid #80d443;
+    background-color: #f5f5f5;
+}
+
+.fa-plus-circle:before{content:"\f067"}
+.fa-times-circle:before {
+  content: "\f00d";
+}
+.fa-question-circle:before {
+  content: "\f128";
+}
+.fa-check-circle:before {
+   content: "\f00c";
+}
+.fa-info-circle:before {
+   content: "\f129";
+}
+.fa-wrench:before {
+  content: "\f0ad";
+}
+.fa-minus-circle:before
+{
+    content: "\f068";
+}
+
+.panel .panel-title
+{
+  padding-left: 20px;
+}
+
+
+
+.fa.fa-arrow-up.text-success,.fa.fa-check.text-success
+{
+    color: #001288;
+}
+body.no-menu #jumbotron {
+    background: url(../images/SR_COLOR.png) no-repeat center 30px;
+    padding: 100px 0;
+    background-size: 450px;
+    /* position: relative; */
+    /* top: -50px; */
+    /* left: auto; */
+    margin-top: -70px;
+    padding-top: 240px;
+}
+#login .panel .panel-heading,#login .panel .panel-body,#login .panel 
+{
+  border: 0px;
+}
+#login .panel-heading
+{
+  padding: 0px;
+}
+.navbar-brand 
+{
+   background-image: url(../images/SR_COLOR.png) ;
+  
+}

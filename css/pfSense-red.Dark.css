@@ -1,0 +1,228 @@
+/*
+Copyright (C) 2016 Enyerber Franco <enyerberfranco.com.ve>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+@import url("../vendor/bootstrap/css/bootstrap.min.css");
+@import url("fonts/roboto.css");
+@import url("pfSense.namale.css");
+
+
+html
+{
+  height: auto;
+    min-height: 100%;
+}
+.footer {
+     position: inherit; 
+}
+#login .footer
+{
+     position: absolute; 
+}
+header
+{
+    background-color:rgba(0, 0, 0, 0) !important;
+}
+header.logo
+{
+    height: 150px;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.navbar-brand img
+{
+    display: none;
+}
+
+.navbar-brand 
+{
+   height: 50px;
+   width: 200px;
+   background-size: 100% 100%;
+   background-origin: 10px;
+   background-repeat: no-repeat;;
+}
+header.logo,footer
+{
+    background:rgba(183, 181, 181, 0.53) !important;
+    padding: 20px;
+    text-shadow: 0px 1px 1px #000;
+}
+
+.breadcrumb
+{
+    background:rgba(183, 181, 181, 0.53) !important;
+
+
+}
+a
+{
+    color:  rgba(158, 2, 2, 0.74);;
+
+}
+a:hover,a:visited
+{
+    color: #f00;
+    text-decoration: underline;
+
+}
+.panel-title {
+    font-size: 2.1em;
+
+}
+body.no-menu {
+
+    padding-top: 0px !important;
+    background-color: #616161;
+
+    border-top-color: rgba(255, 253, 253, 0.48);
+    border-top: solid 160px rgba(255, 253, 253, 0.48);
+    /* border: solid; */
+    padding-top: 0px;
+    margin-top: 0px !important;
+
+}
+.breadcrumb
+{
+    background:rgba(183, 181, 181, 0.53) !important;
+
+}
+html
+{
+
+    color: #000 !important;
+    text-shadow: 0px 1px 0px #a79f9f !important;
+    padding-bottom: 0px;
+    height: auto;
+    min-height: 100%;
+
+
+    background-image: url('../images/background.jpg')!important;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0,0,0,0) !important;
+
+}
+body
+{
+
+
+    background-color: rgba(0,0,0,0) !important;
+
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.logo{
+    align-content: center;
+    text-align: center;
+    align-items: center;
+}
+.breadcrumb
+{
+
+    color:#fff;/*color de texto*/
+
+}
+
+#login .panel
+{
+    background: rgba(3, 0, 0, 0.7);
+    padding: 30px;
+
+}
+button[name=login]
+{
+    background-color: #990000;
+    border-color: #1c1412;
+    width:100%;
+}
+
+#login input
+{
+    width: 100%;
+}
+#login > .panel
+{
+    background:rgba(14,14,14,0.00);
+}
+.navbar-inverse {
+    background-color: rgba(148, 148, 148, 0.62);
+}
+.navbar-inverse .navbar-nav >li>a {
+    border-bottom:  5px solid rgba(110, 109, 109, 0) ;
+    color: #BDBDBD;
+}
+.navbar-inverse:hover .navbar-nav >li>a:hover
+{
+    border-bottom: 5px solid rgba(76, 12, 12, 0.61);
+}
+
+.panel
+{
+    background: rgba(3, 0, 0, 0.7);
+
+    border-radius: 5px;
+
+    padding:10px;
+}
+.panel .panel-heading, .panel .panel-heading,.panel .panel-heading
+{
+    background:rgba(6,6,6,0.00) !important;
+}
+.table,.table,.content
+{
+    background:  rgba(183, 181, 181, 0.70);
+}
+.breadcrumb,.panel{
+    border: 1px solid #4d0504;
+    box-shadow: 0px 2px 6px rgba(202, 37, 37, 0.40);
+    border-radius: 5px;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color:    rgba(183, 181, 181, 0.63);
+}
+
+.dropdown-menu
+{
+    background:rgba(232, 232, 232, 0.94);;
+    border: 1px solid #4d0504;
+}
+.navbar-nav .open .dropdown-menu{
+    border: 1px solid #4d0504;
+}
+.dropdown-menu>li:hover,.navbar-nav .open .dropdown-menu>li:hover
+{
+    border: 1px solid #4d0504;
+}
+.navbar-brand 
+{
+    background-image: url(../logo-black.png) ;
+
+}
+
+body.no-menu #jumbotron {
+    background: url(../logo-black.png) no-repeat center 30px;
+    padding: 100px 0;
+    background-size: 450px;
+    /* position: relative; */
+    /* top: -50px; */
+    /* left: auto; */
+    margin-top: -170px;
+    padding-top: 240px;
+}
