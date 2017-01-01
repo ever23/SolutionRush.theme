@@ -50,7 +50,7 @@ html
     min-height: 100%;
 
 
-    background-image: url('../images/background.jpg')!important;
+    background-image: url('red.Dark/background.jpg')!important;
     background-repeat: no-repeat;
     background-origin: content-box;
     background-size: cover;
